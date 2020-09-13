@@ -2,7 +2,7 @@ const languages = [
     {
         name: "ReasonML",
         parsers: ["reason"],
-        extensions: [".re"],
+        extensions: [".re", ".rei", ".res", ".resi"],
         aceMode: "text",
         linguistLanguageId: 869538413,
         vscodeLanguageIds: ["reason"]
