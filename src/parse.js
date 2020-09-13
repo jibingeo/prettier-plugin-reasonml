@@ -2,7 +2,7 @@ const { sync } = require("execa");
 
 const format = (text, options) => {
     const refmtProcess = process.env.REFMT_BIN || "refmt";
-    return sync(refmtProcess, ["--print-width=" + options.printWidth], {
+    return sync(refmtProcess, ["-format"], {
         input: text,
         preferLocal: true,
         localDir: __dirname,
